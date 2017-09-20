@@ -17,6 +17,14 @@ def find_item(array, house_name)
   return false
 end
 
-def teacher_wallets(key, index)
-  return hash.keys[index]
+def first_key(hash)
+  return hash.keys()[0]
+end
+
+def hash_capitals(hash)
+  capitals = []
+  for country in hash.keys()
+    capitals << hash[country][:capital]
+  end
+  return capitals
 end

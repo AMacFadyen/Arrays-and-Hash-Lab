@@ -33,8 +33,27 @@ def test_teacher_wallets
     Val: 1356,
     Jay: 1
   }
-result = teacher_wallets.keys[0]
+result = first_key(teacher_wallets)
   assert_equal(:Sandy, result)
+end
+
+def test_return_capitals()
+  countries = {
+  uk: {
+    capital: 'London',
+    population: 60
+  },
+  france: {
+    capital: 'Paris',
+    population: 70
+  },
+  italy: {
+    capital: 'Rome',
+    population: 56
+  }
+}
+result = hash_capitals(countries)
+assert_equal([ 'London', 'Paris', 'Rome' ], result)
 end
 
 
