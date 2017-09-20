@@ -17,6 +17,6 @@ def find_item(array, house_name)
   return false
 end
 
-def teacher_wallets(key)
-  return hash.keys[key]
+def teacher_wallets(key, index)
+  return hash.keys[index]
 end

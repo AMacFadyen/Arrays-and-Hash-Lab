@@ -33,7 +33,7 @@ def test_teacher_wallets
     Val: 1356,
     Jay: 1
   }
-result = teacher_wallets.key[1]
+result = teacher_wallets.keys[0]
   assert_equal(:Sandy, result)
 end
 
